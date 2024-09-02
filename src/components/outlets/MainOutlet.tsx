@@ -1,15 +1,21 @@
 import { Outlet } from 'react-router-dom';
+import styled from 'styled-components';
 import Footer from '../UI/organisms/Footer';
+import Header from '../UI/organisms/Header';
+
+const StyledMain = styled.main`
+    min-height: calc(100vh - 80px -100px);
+`
 
 const MainOutlet = () => {
     return ( 
         <>
-         <header></header>
-         <main>
+         <Header />
+            <StyledMain>
               <Outlet />
-         </main>
+            </StyledMain>
          <Footer />
-       </>
+        </>
      );
 }
  
