@@ -1,8 +1,8 @@
 {
  "users": [
     {
-     "id": 1,
-     "name": "John Doe",
+     "id": "fegvni5df",
+     "username": "John",
      "email": "email@example.com"
     }
  ]   
