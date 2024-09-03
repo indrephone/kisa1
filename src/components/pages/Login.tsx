@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
+import bcrypt from 'bcryptjs';
 
 import UsersContext, { UsersContextTypes } from "../../contexts/UsersContext";
 import Heading from "../UI/atoms/Heading";
@@ -8,12 +9,12 @@ import Input from "../UI/atoms/Input";
 
 const Login = () => {
   const navigate = useNavigate();
-
   const { users, logInUser } = useContext(UsersContext) as UsersContextTypes;
   const [inputValues, setInputValues] = useState({
     username: '',
     password: '',
   });
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValues({
@@ -22,22 +23,18 @@ const Login = () => {
     });
   };
 
-  const handleInputBlur = (event: React.FocusEvent<HTMLInputElement>) => {
-    console.log(`Input lost focus: ${event.target.name}`);
-    // Add any onBlur handling logic here
-  };
-
   const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const foundUser = users.find(
       (user) =>
-        user.username === inputValues.username && user.password === inputValues.password
+        user.username === inputValues.username
     );
-    if (foundUser) {
+
+    if (foundUser && bcrypt.compareSync(inputValues.password, foundUser.password)) {
       logInUser(foundUser);
       navigate("/");
     } else {
-      console.log('Failed to log in');
+      setErrorMessage("Invalid username or password.");
     }
   };
 
@@ -53,7 +50,6 @@ const Login = () => {
           placeholderText="Enter your username..."
           value={inputValues.username}
           onChangeF={handleInputChange}
-          onBlur={handleInputBlur} // Pass the onBlur function
         />
         <InputField
           text="Password:"
@@ -63,18 +59,10 @@ const Login = () => {
           placeholderText="Enter your password..."
           value={inputValues.password}
           onChangeF={handleInputChange}
-          onBlur={handleInputBlur} // Pass the onBlur function
         />
 
-        {/* Submit button */}
-        <Input
-          type="submit"
-          value="Login"
-          name="login"
-          id="login"
-          placeholderText=""
-          onBlur={handleInputBlur} // Not typically needed on submit buttons, but included if necessary
-        />
+        <Input type="submit" value="Login" name="login" id="login" />
+        {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
       </form>
       <p>
         Go <Link to="/register">Register</Link>

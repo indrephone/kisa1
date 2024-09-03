@@ -4,6 +4,21 @@
       "id": "579ad26b-a46e-4bb1-9549-c7bdf8f7fd16",
       "username": "kisa1",
       "password": "$2a$10$xiRxh2ESg7uH7ggnIo6p/eETrhmkMy9pD2sSCtjXeYcYZ/2LL1OXy"
+    },
+    {
+      "id": "8bf91ee6-a431-4ae7-be8d-3930cf5d625c",
+      "username": "bite1",
+      "password": "$2a$10$J7e01ghIY8wQLSdRVRpD.u/wlaD30.XnwEaEez93n1E.7LqPauj5."
+    },
+    {
+      "id": "74dfa08e-822b-45ab-9221-92b41f7290f6",
+      "username": "indre1",
+      "password": "$2a$10$1Jum6SRyfENWZB4suiVuWurRqVn2mNnBzlGqc/V/sj3TssCtJHp4e"
+    },
+    {
+      "id": "2765d879-3566-424b-8856-55e02aa7bbf6",
+      "username": "grisha1",
+      "password": "$2a$10$Fgg3mgZ1B6ZTp10XFZiMNO6Yv1TAfaG0y.APZuol2KhO/IBHaBkAW"
     }
   ]
 }
