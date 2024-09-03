@@ -7,11 +7,11 @@ const StyledHome = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('https://cdn.pixabay.com/photo/2022/02/20/20/09/field-7025238_1280.jpg'); // Directly set the background image here
+  background-image: url('https://cdn.pixabay.com/photo/2015/03/09/06/53/background-665096_1280.jpg'); // Directly set the background image here
   background-size: cover;
   background-position: center;
-  color: white;
-  font-size: 24px;
+  color: red;
+  font-size: 36px;
   text-align: center;
 `;
 

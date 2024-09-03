@@ -6,11 +6,11 @@ const StyledAbout = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('https://cdn.pixabay.com/photo/2018/02/03/15/40/landscape-3127859_1280.jpg'); // Directly set the background image here
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/29/03/11/wallpaper-788850_1280.png'); // Directly set the background image here
   background-size: cover;
   background-position: center;
   color: white;
-  font-size: 24px;
+  font-size: 36px;
   text-align: center;
 `;
 

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../atoms/Logo";
-import UsersContext from "../../../contexts/UsersContext"; // Correct the import
+import UsersContext from "../../../contexts/UsersContext"; // Ensure correct import path
 
 const StyledHeader = styled.header`
   display: flex;
@@ -10,6 +10,12 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   height: 80px;
   padding: 0 20px;
+  position: fixed;  // Makes the header fixed at the top of the viewport
+  width: 100%;      // Ensures the header spans the full width of the viewport
+  top: 0;           // Positions the header at the very top of the viewport
+  left: 0;          // Aligns the header to the left of the viewport
+  background-color: white;  // Adds a background color to ensure text is readable
+  z-index: 1000;    // Ensures the header stays above other content
 `;
 
 const LogoContainer = styled.div`
@@ -63,12 +69,11 @@ const ButtonContainer = styled.div`
 
 const Header = () => {
   const context = useContext(UsersContext);
-  
-  // Ensure context is properly used with a null check if needed
+
   const { loggedInUser, logOutUser } = context || { loggedInUser: null, logOutUser: () => {} };
 
   const handleLogout = () => {
-    logOutUser();  // Call logOutUser to update context and logout the user
+    logOutUser();
   };
 
   return (
@@ -77,7 +82,7 @@ const Header = () => {
         <div className="headerLogo">
           <Link to="/"><Logo /></Link>
         </div>
-        <span>CompanyName</span>
+        <span>CompanyName!</span>
       </LogoContainer>
 
       <StyledNav>
