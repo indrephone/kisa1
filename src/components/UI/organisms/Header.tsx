@@ -16,6 +16,8 @@ const StyledHeader = styled.header`
   left: 0;          // Aligns the header to the left of the viewport
   background-color: white;  // Adds a background color to ensure text is readable
   z-index: 1000;    // Ensures the header stays above other content
+  box-sizing: border-box; // Ensures padding is included in the height
+  
 `;
 
 const LogoContainer = styled.div`
