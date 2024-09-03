@@ -123,7 +123,7 @@ const Register = () => {
 
     addNewUser(newUser);
     logInUser(newUser);
-    navigate("/home");
+    navigate("/");
   };
 
   return (

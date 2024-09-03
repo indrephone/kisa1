@@ -35,7 +35,7 @@ const Login = () => {
     );
     if (foundUser) {
       logInUser(foundUser);
-      navigate('/');
+      navigate("/");
     } else {
       console.log('Failed to log in');
     }
