@@ -1,28 +1,39 @@
+import { useContext } from "react";
 import styled from "styled-components";
-import React from "react";
+
+import ProductsContext, { ProductsContextTypes } from "../../contexts/ProductsContext";
+import ProductCard from "../UI/organisms/ProductCard";
 
 // Define a styled component without expecting props for the background URL
-const StyleProducts = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  background-image: url(''); // Directly set the background image here
-  background-size: cover;
-  background-position: center;
-  color: red;
-  font-size: 36px;
-  text-align: center;
+const StyledAllProducts = styled.section`
+   > h1{
+       text-align: center;
+   }
+   > div{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+   }
 `;
 
 const Shop: React.FC = () => {
+
+  const { products } = useContext(ProductsContext) as ProductsContextTypes;
     return (
-      <StyleProducts>
-        <h2>Products</h2>
+      <StyledAllProducts>
+        <h1>Products</h1>
         <div>
-            
+           {
+            products.map(product =>
+              <ProductCard
+                key={product.id}
+                data={product}
+              />
+            )
+           }
         </div>
-      </StyleProducts>
+      </StyledAllProducts>
     );
 };
 
