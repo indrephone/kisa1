@@ -6,6 +6,8 @@ import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import Shop from './components/pages/Shop';
 import SpecProduct from './components/pages/SpecProduct';
+import AddNewProduct from './components/pages/AddNewProduct';
+import EditProduct from './components/pages/EditProduct';
 
 
 const App = () => {
@@ -19,9 +21,9 @@ const App = () => {
          <Route path="about" element={<About />} />
               <Route path="shop">
                 <Route index element={<Shop />} /> 
-                {/* <Route path="create" element={<AddNewProduct />} /> */}
+                <Route path="create" element={<AddNewProduct />} />
                 <Route path=":id" element={<SpecProduct />} />
-                {/* <Route path=":id/edit" element={<EditProduct />} /> */}
+                <Route path=":id/edit" element={<EditProduct />} />
               </Route >
        </Route>  
      </Routes>
