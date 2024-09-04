@@ -5,6 +5,8 @@ import About from './components/pages/About';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
 import Shop from './components/pages/Shop';
+import SpecProduct from './components/pages/SpecProduct';
+
 
 const App = () => {
   return (
@@ -15,7 +17,12 @@ const App = () => {
        <Route element={<MainOutlet />}>
          <Route index element={<Home />} />
          <Route path="about" element={<About />} />
-         <Route path="shop" element={<Shop />} /> 
+              <Route path="shop">
+                <Route index element={<Shop />} /> 
+                {/* <Route path="create" element={<AddNewProduct />} /> */}
+                <Route path=":id" element={<SpecProduct />} />
+                {/* <Route path=":id/edit" element={<EditProduct />} /> */}
+              </Route >
        </Route>  
      </Routes>
     </>
