@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register';
+import Shop from './components/pages/Shop';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
        <Route element={<MainOutlet />}>
          <Route index element={<Home />} />
          <Route path="about" element={<About />} />
+         <Route path="shop" element={<Shop />} /> 
        </Route>  
      </Routes>
     </>

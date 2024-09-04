@@ -1,25 +1,29 @@
 import styled from "styled-components";
+import React from "react";
 
 // Define a styled component without expecting props for the background URL
-const StyledAbout = styled.div`
+const StyleProducts = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-image: url('https://cdn.pixabay.com/photo/2015/05/29/03/11/wallpaper-788850_1280.png'); // Directly set the background image here
+  background-image: url(''); // Directly set the background image here
   background-size: cover;
   background-position: center;
-  color: white;
+  color: red;
   font-size: 36px;
   text-align: center;
 `;
 
-const About: React.FC = () => {
+const Shop: React.FC = () => {
     return (
-      <StyledAbout>
-        <h2>About Us</h2>
-      </StyledAbout>
+      <StyleProducts>
+        <h2>Products</h2>
+        <div>
+            
+        </div>
+      </StyleProducts>
     );
 };
 
-export default About;
+export default Shop;
