@@ -30,11 +30,10 @@ const MainOutlet = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    // Check if the current route is Shop, AddNewProduct, or EditProduct
+    // Check if the current route is Shop, AddNewProduct, SpecProduct, or EditProduct
     const showCreateButton = 
-        location.pathname === '/shop' || 
-        location.pathname.includes('/shop/create') || 
-        location.pathname.includes('/shop/edit');
+        location.pathname.startsWith('/shop') && // Match anything starting with '/shop'
+        !location.pathname.includes('/shop/create'); // Exclude '/shop/create' itself
 
     const handleCreateClick = () => {
         navigate('/shop/create'); // Navigate to AddNewProduct page
