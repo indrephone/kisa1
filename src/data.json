@@ -47,6 +47,13 @@
       "image": "https://startfitness.co.uk/cdn/shop/files/Reebok-Nano-X4-100074186.jpg?v=1706631672",
       "price": 90,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies"
+    },
+    {
+      "id": "77ddcx9",
+      "name": "Puma",
+      "price": 200,
+      "image": "https://shop-us.mercedesamgf1.com/cdn/shop/files/MDJSpirexBlackSC3.jpg?v=1721823816&width=1600",
+      "description": "Puma shoes very nice"
     }
   ]
 }
