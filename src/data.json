@@ -44,8 +44,8 @@
     {
       "id": "jco2fvno",
       "name": "Reebok Shoes",
+      "price": 900,
       "image": "https://startfitness.co.uk/cdn/shop/files/Reebok-Nano-X4-100074186.jpg?v=1706631672",
-      "price": 90,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies"
     },
     {
