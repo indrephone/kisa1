@@ -7,7 +7,17 @@ const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 120px 20px 20px 20px; /* Push content down to avoid fixed header */
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
+const ProductImage = styled.img`
+  max-width: 100%; /* Make the image fit within the container */
+  height: auto;
+  max-height: 500px; /* Set a maximum height for large images */
+  object-fit: contain; /* Ensure image fits without distortion */
+  margin-bottom: 20px;
 `;
 
 const ButtonContainer = styled.div`
@@ -54,7 +64,7 @@ const SpecProduct = () => {
       {product ? (
         <>
           <h2>{product.name}</h2>
-          <img src={product.image} alt={product.name} />
+          <ProductImage src={product.image} alt={product.name} />
           <p>Price: {product.price}€</p>
           <p>{product.description}</p>
 

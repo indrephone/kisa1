@@ -36,9 +36,9 @@
     },
     {
       "id": "jcojlvno",
-      "name": "Adidas Shoes",
-      "image": "https://cdn.pixabay.com/photo/2020/07/19/05/34/adidas-5418998_1280.jpg",
+      "name": "Adidas Black Shoes",
       "price": 120,
+      "image": "https://cdn.pixabay.com/photo/2020/07/19/05/34/adidas-5418998_1280.jpg",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies ultricies"
     },
     {
@@ -54,6 +54,41 @@
       "price": 200,
       "image": "https://shop-us.mercedesamgf1.com/cdn/shop/files/MDJSpirexBlackSC3.jpg?v=1721823816&width=1600",
       "description": "Puma shoes very nice"
+    },
+    {
+      "id": "g1dxdzz",
+      "name": "Dar viena Puma",
+      "price": 400,
+      "image": "https://media.gq-magazine.co.uk/photos/6278e36b7d7f9a6cabdf4004/4:3/w_1440,h_1080,c_limit/__04052021_PUMA_HP.jpg",
+      "description": "dar Puma"
+    },
+    {
+      "id": "1tnplyf",
+      "name": "Puma Mirage",
+      "price": 300,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2022/6/AQ/AL/KP/58086586/puma-mirage-tech.jpeg",
+      "description": "Puma MIrage tech"
+    },
+    {
+      "id": "nw9c7lu",
+      "name": "Real Puma",
+      "price": 1000000,
+      "image": "https://cdn.pixabay.com/photo/2022/01/19/18/03/puma-6950627_1280.jpg",
+      "description": "real puma "
+    },
+    {
+      "id": "apet5zc",
+      "name": "Nike Shoes Sky",
+      "price": 800,
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/8fe0b21/2147483647/strip/true/crop/6122x4081+0+1/resize/1440x960!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F0b%2F7b%2F5b56302840069c22cf1fa46957be%2F1351750-fi-sneaker-buyer-coolkicks-jlc-16172-009.jpg",
+      "description": "nike different models"
+    },
+    {
+      "id": "gjjmohk",
+      "name": "Green Nike",
+      "price": 1000,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/index-bomber-65a839208f31a.jpg?crop=0.417xw:0.833xh;0.324xw,0.141xh&resize=640:*",
+      "description": "NIke Air"
     }
   ]
 }
