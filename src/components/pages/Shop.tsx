@@ -6,6 +6,7 @@ import ProductCard from "../UI/organisms/ProductCard";
 
 // Define a styled component without expecting props for the background URL
 const StyledAllProducts = styled.section`
+  margin-top: 80px;
    > h1{
        text-align: center;
    }
